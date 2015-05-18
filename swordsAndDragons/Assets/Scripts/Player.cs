@@ -31,6 +31,12 @@ public class Player : Character {
 
 		energy = 20;
 		maxEnergy = 20;
+		SetAttackSkills ();
+	}
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.A)) {
+			Attack(1);
+		}
 	}
 
 	public int Damage(){
@@ -39,11 +45,46 @@ public class Player : Character {
 		return damage ;
 	}
 
+	public int QualityOfAttack(){
+		Debug.Log ("For maximun attack must be bigger than" + (100 - (int)(attackSkills * 0.3)));
+		Debug.Log ("For good attack must be bigger than" + (100 - attackSkills ));
+		Debug.Log ("For Bad attack must be smaller than" + ((int)((100 - attackSkills) * 0.5f)));
+		Debug.Log ("For Very Bad attack must be smaller than" + attackSkills );
+		int attackNum = Random.Range (1, 101);
+		if (attackNum > (100 - (int)(attackSkills * 0.3))) {
+			Debug.Log (attackNum);
+			Debug.Log ("Exelent Attack");
+			return 5;
+		} else if (attackNum > (100 - attackSkills)) {
+			Debug.Log (attackNum);
+			Debug.Log ("Good Attack");
+			return 4;
+		} else if (attackNum < attackSkills) {
+			Debug.Log (attackNum);
+			Debug.Log ("Very Bad");
+			return 1;
+		} else if (attackNum < (int)((100 - attackSkills) * 0.5f)) {
+			Debug.Log (attackNum);
+			Debug.Log ("Bad");
+			return 2;
+		} else {
+			Debug.Log (attackNum);
+			Debug.Log ("Normal Attack");
+			return 3;
+		}
+	}
+
+	void SetAttackSkills (){
+	//will set the attack skills needed for the combat system, we will run this function when we update our character
+		attackSkills =(int)( levelAttackSkill + (weaponClassProficiency + weaponProficiency) * 0.5);
+	}
+
 	public int Attack (int attackType){
 		//This class we will use to attack a mob, we receive the attackType that is received from where the player touched the sceen
 		switch (attackType) {
 		case 1 : 
 			Debug.Log("Left Head Stab" );
+			QualityOfAttack();
 			energy = energy - 3;
 			return Damage();
 			break;
