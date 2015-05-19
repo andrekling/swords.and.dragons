@@ -195,7 +195,6 @@ GameObject:
   - 136: {fileID: 536442042}
   - 23: {fileID: 536442041}
   - 114: {fileID: 536442045}
-  - 114: {fileID: 536442046}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -267,27 +266,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 536442040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8317f2b9ce7539545a6a7d67b36cfea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: 
-  level: 0
-  strenght: 0
-  constitution: 0
-  life: 0
---- !u!114 &536442046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 536442040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcbe5cf84a6a3c9489b20a8a851fa125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Bob
-  level: 0
+  characterName: 
+  level: 1
   strenght: 0
   constitution: 0
   life: 0
@@ -296,10 +279,10 @@ MonoBehaviour:
   energy: 0
   recoveryEnergy: 0
   recoveryTime: 0
-  attackSkills: 0
-  levelAttackSkill: 0
-  weaponProficiency: 0
-  weaponClassProficiency: 0
+  attackSkills: 1
+  levelAttackSkill: 10
+  weaponProficiency: 7
+  weaponClassProficiency: 5
   maxDamage: 10
   charStrenght: 3
 --- !u!1 &942607360
@@ -537,6 +520,10 @@ Prefab:
     - target: {fileID: 107672, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447352, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
+      propertyPath: ia
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
