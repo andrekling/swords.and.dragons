@@ -7,7 +7,7 @@ public class Player : Character {
 
 	public int xp;
 	public int xpToNextLevel;
-
+	public int attackCount = 0;
 	public int energy;// This will determine how many actions can be done
 	private int maxEnergy;//The maximun energy the player can have
 	public int recoveryEnergy;// how many points we recovery each time the recovery time is reached
@@ -91,6 +91,7 @@ public class Player : Character {
 	}
 
 	public int Attack (int attackType){
+		attackCount++;
 		int damage;
 		//This class we will use to attack a mob, we receive the attackType that is received from where the player touched the sceen
 		switch (attackType) {

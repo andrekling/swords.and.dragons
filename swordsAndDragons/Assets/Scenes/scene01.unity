@@ -276,6 +276,7 @@ MonoBehaviour:
   life: 0
   xp: 0
   xpToNextLevel: 0
+  attackCount: 0
   energy: 0
   recoveryEnergy: 0
   recoveryTime: 0
