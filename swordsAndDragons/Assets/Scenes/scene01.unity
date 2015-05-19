@@ -286,6 +286,7 @@ MonoBehaviour:
   weaponClassProficiency: 5
   maxDamage: 10
   charStrenght: 3
+  enemy: {fileID: 0}
 --- !u!1 &942607360
 GameObject:
   m_ObjectHideFlags: 0

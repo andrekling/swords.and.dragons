@@ -32,12 +32,11 @@ public class Enemy : Character {
 
 			isDefending = true;
 			}
-
-		DefenseCounter();
 	}
 
-	void DefenseCounter(){
-		defenseCounter = player.GetComponent<Player>().attackCount;
+
+	public void DefenseCounter(){
+		defenseCounter ++;
 	}
 
 	void Defend(){
