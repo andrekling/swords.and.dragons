@@ -20,6 +20,7 @@ public class Player : Character {
 	//will do a basic combat system in here, will change later on
 	public int maxDamage = 10;
 	public int charStrenght = 3;
+	public int attackPoint = 5;//where we attacked
 
 	public GameObject enemy; // later we will need to change this to a list of enemies and get one from the list, but lets do this later.
 	
@@ -111,6 +112,7 @@ public class Player : Character {
 		//This class we will use to attack a mob, we receive the attackType that is received from where the player touched the sceen
 		switch (attackType) {
 		case 1 : 
+			attackPoint = 1;
 			Debug.Log("Left Head Stab" );
 			energy = energy - 3;
 			damage = (int)(Damage() * QualityOfAttack());
@@ -123,6 +125,7 @@ public class Player : Character {
 			}
 			break;
 		case 2:
+			attackPoint = 2;
 			Debug.Log("Left Head to Up Torso Slash");
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
@@ -133,6 +136,7 @@ public class Player : Character {
 
 			break;
 		case 3:
+			attackPoint = 3;
 			Debug.Log("Left Head to Lower Torso Slash");
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
@@ -143,6 +147,7 @@ public class Player : Character {
 
 			break;
 		case 4:
+			attackPoint = 4;
 			Debug.Log("Left Head to Legs Long Slash");
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
@@ -153,6 +158,7 @@ public class Player : Character {
 
 			break;
 		case 5:
+			attackPoint = 1;
 			Debug.Log("Left Head to Right Head Slah");
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
@@ -163,6 +169,7 @@ public class Player : Character {
 
 			break;
 		case 6:
+			attackPoint = 2;
 			Debug.Log("Left Head to Right Up Torso Slash");
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
@@ -173,6 +180,7 @@ public class Player : Character {
 
 			break;
 		case 7:
+			attackPoint = 3;
 			Debug.Log("Left Head to Right Lower Torso Slash");
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
@@ -183,6 +191,7 @@ public class Player : Character {
 
 			break;
 		case 8:
+			attackPoint = 4;
 			Debug.Log("Left Head to Right Legs Long Slash");
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}

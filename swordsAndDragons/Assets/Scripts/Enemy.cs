@@ -16,7 +16,9 @@ public class Enemy : Character {
 	public int maxNumRandomDefenses; // gave by IA
 	public int howManyRandom; //How many times it will be random
 	public int randomCounter = 0; //The counter
-	public int defenseSpot;
+	public int defenseSpot;// this is where we will store the number off the % to chose where to defend
+	public int defensePlace;// this is the number where we defended to compare against the player attack
+
 
 	//for the defense
 	//public int head;
@@ -71,20 +73,34 @@ public class Enemy : Character {
 		defenseCounter ++;
 	}
 
+	public void CheckDefense(){
+		if (defensePlace == player.GetComponent<Player> ().attackPoint) {
+			Debug.Log ("DEFENDED");
+		} else {
+			Debug.Log ("HIT");
+		}
+	}
+
 	public void Defend(){
 		defenseSpot = Random.Range (1, 101);
 		DefenseSpot (defenseSpot);
+		CheckDefense ();
 	}
 	void DefenseSpot (int defenseSpot){
 		if (defenseSpot <= noDef) {
+			defensePlace = 5;
 			Debug.Log("no defense");
 		} else if (defenseSpot >= noDef && defenseSpot <= legs) {
+			defensePlace = 4;
 			Debug.Log("legs attack");
 		} else if (defenseSpot >= legs && defenseSpot <= loBody) {
+			defensePlace = 3;
 			Debug.Log("lower body attack");
 		} else if (defenseSpot >= loBody && defenseSpot <= upBody) {
+			defensePlace = 2;
 			Debug.Log("upper body attack");
 		} else if (defenseSpot > upBody ) {
+			defensePlace = 1;
 			Debug.Log("head attack");
 		}
 	}
