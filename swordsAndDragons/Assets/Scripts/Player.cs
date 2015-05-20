@@ -98,7 +98,14 @@ public class Player : Character {
 	}
 
 	public void Attack (int attackType){
-		enemy.GetComponent<Enemy> ().DefenseCounter ();
+		if(enemy.GetComponent<Enemy>().isRandomlyDefending == true ){
+			enemy.GetComponent<Enemy>().RandomCounter();
+		}
+		if(enemy.GetComponent<Enemy>().isDefending == true ){
+			enemy.GetComponent<Enemy> ().DefenseCounter ();
+		}
+
+
 		attackCount++;
 		int damage;
 		//This class we will use to attack a mob, we receive the attackType that is received from where the player touched the sceen
@@ -109,10 +116,11 @@ public class Player : Character {
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
 			Debug.Log("Damage is :" + damage);
-
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			if(enemy.GetComponent<Enemy>().isDefending == false){
+				enemy.GetComponent<Enemy>().Defend();
+				enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+				enemy.GetComponent<Enemy>().Death();
+			}
 			break;
 		case 2:
 			Debug.Log("Left Head to Up Torso Slash");
