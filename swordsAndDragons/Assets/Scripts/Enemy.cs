@@ -18,6 +18,13 @@ public class Enemy : Character {
 	public int randomCounter = 0; //The counter
 	public int defenseSpot;
 
+	//for the defense
+	//public int head;
+	public int upBody;
+	public int loBody;
+	public int legs;
+	public int noDef;
+
 	void Awake(){
 		if (player == null) {
 			player = GameObject.FindGameObjectWithTag ("Player");
@@ -69,19 +76,16 @@ public class Enemy : Character {
 		DefenseSpot (defenseSpot);
 	}
 	void DefenseSpot (int defenseSpot){
-		switch (defenseSpot) {
-		case 10:
-			Debug.Log("HeadDef");
-			break;
-		case 40:
-			Debug.Log("ChestDef");
-			break;
-		case 70:
-			Debug.Log("BellyDef");
-			break;
-		case 90:
-			Debug.Log("LegDef");
-			break;
+		if (defenseSpot <= noDef) {
+			Debug.Log("no defense");
+		} else if (defenseSpot >= noDef && defenseSpot <= legs) {
+			Debug.Log("legs attack");
+		} else if (defenseSpot >= legs && defenseSpot <= loBody) {
+			Debug.Log("lower body attack");
+		} else if (defenseSpot >= loBody && defenseSpot <= upBody) {
+			Debug.Log("upper body attack");
+		} else if (defenseSpot > upBody ) {
+			Debug.Log("head attack");
 		}
 	}
 
@@ -102,6 +106,13 @@ public class Enemy : Character {
 			maxNumRandomDefenses = 6;
 			maxNumDefenses = 4;
 			Debug.Log("IA is 1");
+			//defense
+			noDef = 20;
+			legs = 40;
+			loBody = 60;
+			upBody = 80;
+			//head = 100;
+
 			break;
 		case 2:
 			maxNumRandomDefenses = 4;
