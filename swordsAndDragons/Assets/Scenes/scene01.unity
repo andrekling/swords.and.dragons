@@ -286,6 +286,7 @@ MonoBehaviour:
   weaponClassProficiency: 5
   maxDamage: 10
   charStrenght: 3
+  attackPoint: 5
   enemy: {fileID: 0}
 --- !u!1 &942607360
 GameObject:
@@ -464,6 +465,7 @@ MonoBehaviour:
   coroutineTime: 0
   stoppedTime: 0
   playerName: FAIL
+  enemyLife: 0
   isDefending: 0
   defendingTime: 0
   defenseStoppedTime: 0

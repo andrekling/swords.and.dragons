@@ -37,6 +37,7 @@ public class codeLearning : MonoBehaviour {
 	private int screenDivY;
 	private int posIni = 0;
 	private int posFin = 0;
+	public int enemyLife;
 
 	Component playerComponent;
 
@@ -75,6 +76,9 @@ public class codeLearning : MonoBehaviour {
 	}
 
 	void OnGUI (){
+		//enemy Life Bar
+		GUI.Box(new Rect(Screen.width / 2,10,enemyLife,20),"Enemy Life" );
+
 		GUI.Box(new Rect(0,0,screenDivisionUnitX,Screen.height),"This is a box 1" );
 		GUI.Box(new Rect(screenDivisionUnitX,screenDivisionUnitY,Screen.width - screenDivisionUnitX - screenDivisionUnitX,Screen.height - 2* screenDivisionUnitY),"This is a box 2" );
 		GUI.Box(new Rect(Screen.width - screenDivisionUnitX,0,screenDivisionUnitX / 2,Screen.height),"This is a box 3" );
@@ -94,8 +98,15 @@ public class codeLearning : MonoBehaviour {
 	}
 
 	void Update () {
-		theText = "The timer now is " + (int)GameTimer();
 
+		if (enemy.GetComponent<Enemy> ().life > 0) {
+			enemyLife = enemy.GetComponent<Enemy> ().life;
+		} else { 
+			enemyLife = 0;
+		}
+
+
+		theText = "The timer now is " + (int)GameTimer();
 
 
 		List<Touch> touches = new List<Touch> ();

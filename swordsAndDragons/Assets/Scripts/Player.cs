@@ -120,8 +120,10 @@ public class Player : Character {
 			Debug.Log("Damage is :" + damage);
 			if(enemy.GetComponent<Enemy>().isDefending == false){
 				enemy.GetComponent<Enemy>().Defend();
-				enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-				enemy.GetComponent<Enemy>().Death();
+				if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+					enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+					enemy.GetComponent<Enemy>().Death();
+				}
 			}
 			break;
 		case 2:
