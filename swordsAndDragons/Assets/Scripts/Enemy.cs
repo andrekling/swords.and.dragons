@@ -22,10 +22,27 @@ public class Enemy : Character {
 
 	//for the defense
 	//public int head;
-	public int upBody;
-	public int loBody;
-	public int legs;
-	public int noDef;
+	private int upBody;
+	private int loBody;
+	private int legs;
+	private int noDef;
+
+	//for the enemy Attack
+	public int aggressivity;//this is how aggressive the enemy will be, will use it to randomly attack the player
+
+	public float minWaitToAttack; // minimun time the monster will wait until attack the player
+	public float maxWaitToAttack; // maximun time we will wait
+	public float waitToAttack; // a random value between the min and the maximun, we will attack when the time since last player action is bigger than this.
+
+	public int numberOfAttacks; // how many attacks can the enemy do, if he can do combos
+	public int whereToAttack; // will use this to randomly choose a number from 0 to 100 to decide where to attack,
+	// to define how likely it is to attack any of this places
+	public int attackLegs;
+	public int attackLoBody;
+	public int attackUpBody;
+	public int attackHead;
+
+	public int damage;
 
 	void Awake(){
 		if (player == null) {
@@ -48,6 +65,7 @@ public class Enemy : Character {
 				Debug.Log("No longer RandomlyDefending");
 				isDefending = true;
 				isRandomlyDefending = false;
+				Attack();
 			}
 
 		}
@@ -114,6 +132,20 @@ public class Enemy : Character {
 	public int SetRandomlyDefenses(int maxNumRandomDefenses ){
 		howManyRandom = Random.Range (0, maxNumRandomDefenses + 1);
 		return howManyRandom;
+	}
+
+	void Attack(){
+		Debug.Log ("ATTACKED");
+		whereToAttack = Random.Range (0, 101);
+		if (whereToAttack >= attackHead) {
+			Debug.Log ("Head Attack");
+		} else if (whereToAttack > attackLoBody && whereToAttack < attackHead) {
+			Debug.Log ("Upper Body Attack");
+		} else if (whereToAttack > attackLegs && whereToAttack < attackUpBody) {
+			Debug.Log ("Lowe Body Attack");
+		} else {
+			Debug.Log("Legs Attack");
+		} 
 	}
 
 	void SetIA(){
