@@ -7,9 +7,6 @@ public class codeLearning : MonoBehaviour {
 	public GameObject player;
 	public GameObject enemy;
 
-	public float playerActionTimer = 0.0f;//this variable to calculate the time since last player action
-	public float lastPlayerActionTimer = 0.0f;//This is where we will store the last action time
-
 	public int divisionScreenX;
 	public int divisionScreenY;
 	public int swipeZone2Confort;
@@ -840,6 +837,7 @@ public class codeLearning : MonoBehaviour {
 		isRunningLastActionTimer = true;
 		while(isRunningLastActionTimer == true){
 			lastActionTimer += 0.1f;
+			player.GetComponent<Player>().playerActionTimer = lastActionTimer;
 			yield return new WaitForSeconds(0.1f);
 		}
 		stoppedLastActionTimer = lastActionTimer;
@@ -848,8 +846,8 @@ public class codeLearning : MonoBehaviour {
 	}
 
 	IEnumerator PlayerTimer(){
-		playerActionTimer += 0.1f;
-		Debug.Log("Coroutine Timer Running");
+		player.GetComponent<Player>().playerActionTimer += 0.1f;
+		Debug.Log("Coroutine Player Timer Running");
 		yield return new WaitForSeconds (0.1f);
 	}
 

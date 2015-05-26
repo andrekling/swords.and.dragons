@@ -23,6 +23,10 @@ public class Player : Character {
 	public int attackPoint = 5;//where we attacked
 
 	public GameObject enemy; // later we will need to change this to a list of enemies and get one from the list, but lets do this later.
+
+	public float playerActionTimer = 0.0f;//this variable to hold the timer since last action
+
+
 	
 
 	private bool isRecovering = false;

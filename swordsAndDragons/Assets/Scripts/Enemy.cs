@@ -3,7 +3,9 @@ using System.Collections;
 
 public class Enemy : Character {
 
-	public GameObject player; // reference to the player
+	private GameObject player; // reference to the player
+	private GameObject rules; // reference to game rules
+
 	public int defense = 5;
 	public int ia = 1;
 	public bool isDefending = false;
@@ -48,6 +50,9 @@ public class Enemy : Character {
 		if (player == null) {
 			player = GameObject.FindGameObjectWithTag ("Player");
 		}
+		if (rules == null) {
+			rules = GameObject.FindGameObjectWithTag ("Rules");
+		}
 	}
 
 	void Start(){
@@ -81,6 +86,7 @@ public class Enemy : Character {
 			}
 				
 		}
+		AttackOverTime ();
 
 	}
 	public void RandomCounter(){
@@ -148,18 +154,50 @@ public class Enemy : Character {
 		} 
 	}
 
+	void AttackOverTime(){
+		if (player.GetComponent<Player> ().playerActionTimer > waitToAttack) {
+			Debug.Log("Attacked over time");
+			//Need to restart the timer
+			Attack();
+			PlayerTimerStop();
+			PlayerTimerRestart();
+		}
+	}
+
+	void PlayerTimerStop(){
+		Debug.Log ("Will Stop the player timer!");
+		rules.GetComponent<codeLearning> ().isRunningLastActionTimer = false;
+		NewWaitTime ();
+		rules.GetComponent<codeLearning> ().lastActionTimer = 0;
+		//Debug.Log ("Will Restart the player timer!");
+		//rules.GetComponent<codeLearning> ().isRunningLastActionTimer = true;
+	}
+
+	void PlayerTimerRestart(){
+		Debug.Log ("Will Start the player timer!");
+		rules.GetComponent<codeLearning> ().isRunningLastActionTimer = true;
+	}
+
+	void NewWaitTime(){
+		waitToAttack = Random.Range (minWaitToAttack, maxWaitToAttack);
+	}
+
 	void SetIA(){
 		switch (ia) {
 		case 1:
 			maxNumRandomDefenses = 6;
 			maxNumDefenses = 4;
+			minWaitToAttack = 0.5f;
+			maxWaitToAttack = 3.5f;
+			NewWaitTime();
+
 			Debug.Log("IA is 1");
 			//defense
 			noDef = 20;
 			legs = 40;
 			loBody = 60;
 			upBody = 80;
-			//head = 100;
+
 
 			break;
 		case 2:

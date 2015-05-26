@@ -288,6 +288,7 @@ MonoBehaviour:
   charStrenght: 3
   attackPoint: 5
   enemy: {fileID: 0}
+  playerActionTimer: 0
 --- !u!1 &942607360
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +433,7 @@ GameObject:
   - 114: {fileID: 1411637188}
   m_Layer: 0
   m_Name: ScriptHolder
-  m_TagString: Untagged
+  m_TagString: Rules
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,8 +451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   enemy: {fileID: 0}
-  playerActionTimer: 0
-  lastPlayerActionTimer: 0
   divisionScreenX: 5
   divisionScreenY: 8
   swipeZone2Confort: 30
