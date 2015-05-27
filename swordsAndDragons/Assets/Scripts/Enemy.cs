@@ -166,16 +166,16 @@ public class Enemy : Character {
 
 	void PlayerTimerStop(){
 		Debug.Log ("Will Stop the player timer!");
-		rules.GetComponent<codeLearning> ().isRunningLastActionTimer = false;
+		rules.GetComponent<Logic> ().isRunningLastActionTimer = false;
 		NewWaitTime ();
-		rules.GetComponent<codeLearning> ().lastActionTimer = 0;
+		rules.GetComponent<Logic> ().lastActionTimer = 0;
 		//Debug.Log ("Will Restart the player timer!");
 		//rules.GetComponent<codeLearning> ().isRunningLastActionTimer = true;
 	}
 
 	void PlayerTimerRestart(){
 		Debug.Log ("Will Start the player timer!");
-		rules.GetComponent<codeLearning> ().isRunningLastActionTimer = true;
+		rules.GetComponent<Logic> ().isRunningLastActionTimer = true;
 	}
 
 	void NewWaitTime(){

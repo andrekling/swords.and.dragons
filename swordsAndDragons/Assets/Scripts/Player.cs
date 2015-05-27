@@ -9,9 +9,11 @@ public class Player : Character {
 	public int xpToNextLevel;
 	public int attackCount = 0;
 	public int energy;// This will determine how many actions can be done
+
+	public bool isRecovering = false;// this is to control if the recovering energy coroutine should run or not
 	private int maxEnergy;//The maximun energy the player can have
-	public int recoveryEnergy;// how many points we recovery each time the recovery time is reached
-	public float recoveryTime; // how long until we add again the recovery energy value
+	public int recoveryEnergy = 1;// how many points we recovery each time the recovery time is reached
+	public float recoveryTime = 0.5f; // how long until we add again the recovery energy value
 
 	public int attackSkills = 1; // the total skill points
 	public int levelAttackSkill = 1; //How many points he has in skill per level
@@ -29,7 +31,7 @@ public class Player : Character {
 
 	
 
-	private bool isRecovering = false;
+
 
 	#endregion
 	void Awake(){
@@ -49,6 +51,7 @@ public class Player : Character {
 		if (Input.GetKeyDown (KeyCode.A)) {
 			Attack(1);
 		}
+		EnergyRecover ();
 	}
 
 	public int Damage(){
@@ -772,27 +775,31 @@ public class Player : Character {
 		}
 
 	public void EnergyRecover(){
-
-			StartCoroutine (RecoveryEnergy());
-
+		if (isRecovering != true) {
+			if (energy < maxEnergy) {
+				isRecovering = true;
+				StartCoroutine (RecoveryEnergy ());
+			}
+		}
 	}
 	void CalculateAttackSlills(){
 		attackSkills = weaponProficiency + weaponClassProficiency + levelAttackSkill;
 	}
 
 	IEnumerator RecoveryEnergy(){
-		isRecovering = true;
+
 	
-		// we loop this function until the energy is the same as the maximun energy
-		while( energy != maxEnergy ){
-			yield return new WaitForSeconds(recoveryTime);
-			energy += recoveryEnergy;
-			Debug.Log(energy);
+			// we loop this function until the energy is the same as the maximun energy
+			while (energy != maxEnergy) {
+				yield return new WaitForSeconds (recoveryTime);
+				energy += recoveryEnergy;
+				Debug.Log (energy);
 
 			
-		}
-		yield return null;
-		Debug.Log("Energy recovered");
-		isRecovering = false;
+			}
+			yield return null;
+			//Debug.Log("Energy recovered");
+			isRecovering = false;
+
 	}
 }
