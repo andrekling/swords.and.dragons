@@ -21,6 +21,10 @@ public class Enemy : Character {
 	public int defenseSpot;// this is where we will store the number off the % to chose where to defend
 	public int defensePlace;// this is the number where we defended to compare against the player attack
 
+	Animator anim;
+	int attackHash = Animator.StringToHash("HeadAttack");
+
+
 
 	//for the defense
 	//public int head;
@@ -53,6 +57,7 @@ public class Enemy : Character {
 		if (rules == null) {
 			rules = GameObject.FindGameObjectWithTag ("Rules");
 		}
+		anim = GetComponentInChildren<Animator> ();
 	}
 
 	void Start(){
@@ -144,8 +149,9 @@ public class Enemy : Character {
 		Debug.Log ("ATTACKED");
 		whereToAttack = Random.Range (0, 101);
 		if (whereToAttack >= attackHead) {
+			anim.SetBool(attackHash, true);
 			Debug.Log ("Head Attack");
-		} else if (whereToAttack > attackLoBody && whereToAttack < attackHead) {
+			} else if (whereToAttack > attackLoBody && whereToAttack < attackHead) {
 			Debug.Log ("Upper Body Attack");
 		} else if (whereToAttack > attackLegs && whereToAttack < attackUpBody) {
 			Debug.Log ("Lowe Body Attack");

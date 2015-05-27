@@ -278,8 +278,8 @@ MonoBehaviour:
   xpToNextLevel: 0
   attackCount: 0
   energy: 0
-  recoveryEnergy: 0
-  recoveryTime: 0
+  recoveryEnergy: 1
+  recoveryTime: 1
   attackSkills: 1
   levelAttackSkill: 10
   weaponProficiency: 7
