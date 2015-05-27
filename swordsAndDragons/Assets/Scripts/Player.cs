@@ -10,7 +10,7 @@ public class Player : Character {
 	public int attackCount = 0;
 	public int energy;// This will determine how many actions can be done
 
-	public bool isRecovering = false;// this is to control if the recovering energy coroutine should run or not
+	private bool isRecovering = false;// this is to control if the recovering energy coroutine should run or not
 	private int maxEnergy;//The maximun energy the player can have
 	public int recoveryEnergy = 1;// how many points we recovery each time the recovery time is reached
 	public float recoveryTime = 0.5f; // how long until we add again the recovery energy value
@@ -22,7 +22,7 @@ public class Player : Character {
 	//will do a basic combat system in here, will change later on
 	public int maxDamage = 10;
 	public int charStrenght = 3;
-	public int attackPoint = 5;//where we attacked
+	public int attackPoint = 5;//where we attacked so the enemy can defend
 
 	public GameObject enemy; // later we will need to change this to a list of enemies and get one from the list, but lets do this later.
 
@@ -116,12 +116,15 @@ public class Player : Character {
 
 		attackCount++;
 		int damage;
+		int cost;
 		//This class we will use to attack a mob, we receive the attackType that is received from where the player touched the sceen
 		switch (attackType) {
 		case 1 : 
+			cost = 3;
+			if(energy > cost){
 			attackPoint = 1;
 			Debug.Log("Left Head Stab" );
-			energy = energy - 3;
+			energy = energy - cost;
 			damage = (int)(Damage() * QualityOfAttack());
 			if(damage == 0){damage = 1;}
 			Debug.Log("Damage is :" + damage);
@@ -130,6 +133,7 @@ public class Player : Character {
 				if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
 					enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
 					enemy.GetComponent<Enemy>().Death();
+					}
 				}
 			}
 			break;
