@@ -22,7 +22,8 @@ public class Enemy : Character {
 	public int defensePlace;// this is the number where we defended to compare against the player attack
 
 	Animator anim;
-	int attackHash = Animator.StringToHash("HeadAttack");
+	int attackHash = Animator.StringToHash("Attack");
+	int attackTypeHash = Animator.StringToHash("AttackType");
 
 
 
@@ -149,7 +150,8 @@ public class Enemy : Character {
 		Debug.Log ("ATTACKED");
 		whereToAttack = Random.Range (0, 101);
 		if (whereToAttack >= attackHead) {
-			anim.SetBool(attackHash, true);
+			anim.SetInteger(attackTypeHash, 1);
+			anim.SetTrigger(attackHash);
 			Debug.Log ("Head Attack");
 			} else if (whereToAttack > attackLoBody && whereToAttack < attackHead) {
 			Debug.Log ("Upper Body Attack");
