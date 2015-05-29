@@ -13,6 +13,8 @@ public class Enemy : Character {
 	public int howManyDefenses; // this is the number sorted by the ia of how many times it will defend
 	public int defenseCounter = 0; // this is the count of defenses made.
 
+	public float playerActionTimer;
+
 	// for the random defenses
 	public bool isRandomlyDefending = true;
 	public int maxNumRandomDefenses; // gave by IA
@@ -154,15 +156,22 @@ public class Enemy : Character {
 			anim.SetTrigger(attackHash);
 			Debug.Log ("Head Attack");
 			} else if (whereToAttack > attackLoBody && whereToAttack < attackHead) {
+			anim.SetInteger(attackTypeHash, 2);
+			anim.SetTrigger(attackHash);
 			Debug.Log ("Upper Body Attack");
 		} else if (whereToAttack > attackLegs && whereToAttack < attackUpBody) {
+			anim.SetInteger(attackTypeHash, 3);
+			anim.SetTrigger(attackHash);
 			Debug.Log ("Lowe Body Attack");
 		} else {
+			anim.SetInteger(attackTypeHash, 4);
+			anim.SetTrigger(attackHash);
 			Debug.Log("Legs Attack");
 		} 
 	}
 
 	void AttackOverTime(){
+		playerActionTimer = player.GetComponent<Player> ().playerActionTimer;
 		if (player.GetComponent<Player> ().playerActionTimer > waitToAttack) {
 			Debug.Log("Attacked over time");
 			//Need to restart the timer
@@ -195,8 +204,8 @@ public class Enemy : Character {
 		case 1:
 			maxNumRandomDefenses = 6;
 			maxNumDefenses = 4;
-			minWaitToAttack = 0.5f;
-			maxWaitToAttack = 3.5f;
+			minWaitToAttack = 1.5f;
+			maxWaitToAttack = 6.5f;
 			NewWaitTime();
 
 			Debug.Log("IA is 1");

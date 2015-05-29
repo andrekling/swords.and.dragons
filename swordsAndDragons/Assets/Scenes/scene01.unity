@@ -173,7 +173,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 231657366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -490,7 +490,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 470786, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.65999997
+      value: 1.14999998
       objectReference: {fileID: 0}
     - target: {fileID: 470786, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
       propertyPath: m_LocalPosition.y
@@ -498,7 +498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 470786, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -6.48999977
+      value: -6.57999992
       objectReference: {fileID: 0}
     - target: {fileID: 470786, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
       propertyPath: m_LocalRotation.x
@@ -527,6 +527,26 @@ Prefab:
     - target: {fileID: 11447352, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
       propertyPath: ia
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447352, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
+      propertyPath: attackHead
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447352, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
+      propertyPath: attackUpBody
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447352, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
+      propertyPath: attackLoBody
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447352, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
+      propertyPath: minWaitToAttack
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447352, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}
+      propertyPath: maxWaitToAttack
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f55d665d6c549c48841c81472f219d7, type: 2}

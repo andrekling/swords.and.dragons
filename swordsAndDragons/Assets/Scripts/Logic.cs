@@ -36,7 +36,7 @@ public class Logic : MonoBehaviour {
 	private int posFin = 0;
 	public int enemyLife;
 
-	Component playerComponent;
+
 
 	//Defense part
 	public bool isDefending = false;//for punishing if player attacks while defending
@@ -59,7 +59,7 @@ public class Logic : MonoBehaviour {
 
 
 	void Start () {
-		playerComponent = player.GetComponent<Player>();
+
 		playerName = player.GetComponent<Player>().characterName;
 		screenDivisionUnitX = Screen.width / divisionScreenX;
 		screenDivisionUnitY = Screen.height / divisionScreenY;
@@ -323,321 +323,332 @@ public class Logic : MonoBehaviour {
 						//Check attack 
 						////// 1
 						if(posIni == 1 && posFin == 1){
+							player.GetComponent<Player>().Attack(1);
 
 							//We call the player Attack 1
 							//Debug.Log("Left Head Stab");
 						}
 						else if(posIni == 1 && posFin == 2){
+								player.GetComponent<Player>().Attack(2);
 
 							//We call the player Attack 2
 								//Debug.Log("Left Head to Up Torso Slash");
 						}
 						else if(posIni == 1 && posFin == 3){
+								player.GetComponent<Player>().Attack(3);
 
 							//We call the player Attack 3
 								//Debug.Log("Left Head to Lower Torso Slash");
 						}
 						else if(posIni == 1 && posFin == 4){
+								player.GetComponent<Player>().Attack(4);
 
 							//We call the player Attack 4
 								//Debug.Log("Left Head to Legs Long Slash");
 						}
 						else if(posIni == 1 && posFin == 5){
+								player.GetComponent<Player>().Attack(5);
 
 							//We call the player Attack 5
 								//Debug.Log("Left Head to Right Head Slah");
 						}
 						else if(posIni == 1 && posFin == 6){
-
+								player.GetComponent<Player>().Attack(6);
 							//We call the player Attack 6
 								//Debug.Log("Left Head to Right Up Torso Slash");
 						}
 						else if(posIni == 1 && posFin == 7){
-
+								player.GetComponent<Player>().Attack(7);
 							//We call the player Attack 7
 								//Debug.Log("Left Head to Right Lower Torso Slash");
 						}else if(posIni == 1 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(8);
 							//We call the player Attack 8
 								//Debug.Log("Left Head to Right Legs Long Slash");
 						}//////// 1 done
 
 						else if(posIni == 2 && posFin == 1){
+								player.GetComponent<Player>().Attack(9);
 
 							//We call the player Attack 1
 								//Debug.Log("Left Up Torso to Left Head Slash");
 						}
 						else if(posIni == 2 && posFin == 2){
+								player.GetComponent<Player>().Attack(10);
 
 							//We call the player Attack 2
 								//Debug.Log("Left Up Torso Stab");
 						}
 						else if(posIni == 2 && posFin == 3){
-
+								player.GetComponent<Player>().Attack(11);
 							//We call the player Attack 3
 								//Debug.Log("Left Up Torso to Lower Torso Slash");
 						}
 						else if(posIni == 2 && posFin == 4){
-
+								player.GetComponent<Player>().Attack(12);
 							//We call the player Attack 4
 								//Debug.Log("Left Up Torso to Legs Slash");
 						}
 						else if(posIni == 2 && posFin == 5){
+								player.GetComponent<Player>().Attack(13);
 
 							//We call the player Attack 5
 								//Debug.Log("Left Up Torso to Right Head Slah");
 						}
 						else if(posIni == 2 && posFin == 6){
+								player.GetComponent<Player>().Attack(14);
 
 							//We call the player Attack 6
 								//Debug.Log("Left Up Torso to Right Up Torso Slash");
 						}
 						else if(posIni == 2 && posFin == 7){
+								player.GetComponent<Player>().Attack(15);
 
 							//We call the player Attack 7
 								//Debug.Log("Left Up Torso to Right Lower Torso Slash");
 						}else if(posIni == 2 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(16);
 							//We call the player Attack 8
 								//Debug.Log("Left Up Torso to Right Legs Slash");
 						}//////// 2 done
 
 						else if(posIni == 3 && posFin == 1){
-
+								player.GetComponent<Player>().Attack(17);
 							//We call the player Attack 1
 								//Debug.Log("Left Lower Torso to Left Head Slash");
 						}
 						else if(posIni == 3 && posFin == 2){
+								player.GetComponent<Player>().Attack(18);
 
 							//We call the player Attack 2
 								//Debug.Log("Left Lower Torso to Left Up Torso Slash");
 						}
 						else if(posIni == 3 && posFin == 3){
-
+								player.GetComponent<Player>().Attack(19);
 							//We call the player Attack 3
 								//Debug.Log("Lower Torso Stab");
 						}
 						else if(posIni == 3 && posFin == 4){
-
+								player.GetComponent<Player>().Attack(20);
 							//We call the player Attack 4
 								//Debug.Log("Left Lower Torso to Legs Slash");
 						}
 						else if(posIni == 3 && posFin == 5){
-
+								player.GetComponent<Player>().Attack(21);
 							//We call the player Attack 5
 								//Debug.Log("Left Lower Torso to Right Head Slah");
 						}
 						else if(posIni == 3 && posFin == 6){
-
+								player.GetComponent<Player>().Attack(22);
 							//We call the player Attack 6
 								//Debug.Log("Left Lower Torso to Right Up Torso Slash");
 						}
 						else if(posIni == 3 && posFin == 7){
-
+								player.GetComponent<Player>().Attack(23);
 							//We call the player Attack 7
 								//Debug.Log("Left Lower Torso to Right Lower Torso Slash");
 						}else if(posIni == 3 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(24);
 							//We call the player Attack 8
 								//Debug.Log("Left Lower Torso to Right Legs Slash");
 						}//////// 3 done
 
 						else if(posIni == 4 && posFin == 1){
-
+								player.GetComponent<Player>().Attack(25);
 							//We call the player Attack 1
 								//Debug.Log("Left Lower Legs to Left Head Long Slash");
 						}
 						else if(posIni == 4 && posFin == 2){
-
+								player.GetComponent<Player>().Attack(26);
 							//We call the player Attack 2
 								//Debug.Log("Left Lower Legs to Left Up Torso Slash");
 						}
 						else if(posIni == 4 && posFin == 3){
-
+								player.GetComponent<Player>().Attack(27);
 							//We call the player Attack 3
 								//Debug.Log("Left Lower Legs to Lower Torso Slash");
 						}
 						else if(posIni == 4 && posFin == 4){
-
+								player.GetComponent<Player>().Attack(28);
 							//We call the player Attack 4
 								//Debug.Log("Left Lower Legs Stab");
 						}
 						else if(posIni == 4 && posFin == 5){
-
+								player.GetComponent<Player>().Attack(29);
 							//We call the player Attack 5
 								//Debug.Log("Left Lower Legs to Right Head Long Slah");
 						}
 						else if(posIni == 4 && posFin == 6){
-
+								player.GetComponent<Player>().Attack(30);
 							//We call the player Attack 6
 								//Debug.Log("Left Lower Legs to Right Up Torso Slash");
 						}
 						else if(posIni == 4 && posFin == 7){
-
+								player.GetComponent<Player>().Attack(31);
 							//We call the player Attack 7
 								//Debug.Log("Left Lower Legs to Right Lower Torso Slash");
 						}else if(posIni == 4 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(32);
 							//We call the player Attack 8
 								//Debug.Log("Left Lower Legs to Right Legs Slash");
 						}//////// 4 done
 
 						else if(posIni == 5 && posFin == 1){
-
+								player.GetComponent<Player>().Attack(33);
 							//We call the player Attack 1
 								//Debug.Log("Right Head Stab");
 						}
 						else if(posIni == 5 && posFin == 2){
-
+								player.GetComponent<Player>().Attack(34);
 							//We call the player Attack 2
 								//Debug.Log("Right Head to Up Torso Slash");
 						}
 						else if(posIni == 5 && posFin == 3){
-
+								player.GetComponent<Player>().Attack(35);
 							//We call the player Attack 3
 								//Debug.Log("Right Head to Lower Torso Slash");
 						}
 						else if(posIni == 5 && posFin == 4){
-
+								player.GetComponent<Player>().Attack(36);
 							//We call the player Attack 4
 								//Debug.Log("Right Head to Legs Long Slash");
 						}
 						else if(posIni == 5 && posFin == 5){
-
+								player.GetComponent<Player>().Attack(37);
 							//We call the player Attack 5
 								//Debug.Log("Right Head to Right Head Slah");
 						}
 						else if(posIni == 5 && posFin == 6){
-
+								player.GetComponent<Player>().Attack(38);
 							//We call the player Attack 6
 								//Debug.Log("Right Head to Right Up Torso Slash");
 						}
 						else if(posIni == 5 && posFin == 7){
-
+								player.GetComponent<Player>().Attack(39);
 							//We call the player Attack 7
 								//Debug.Log("Right Head to Right Lower Torso Slash");
 						}else if(posIni == 5 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(40);
 							//We call the player Attack 8
 								//Debug.Log("Right Head to Right Legs Long Slash");
 						}//////// 5 done
 
 						else if(posIni == 6 && posFin == 1){
-
+								player.GetComponent<Player>().Attack(41);
 							//We call the player Attack 1
 								//Debug.Log("Right Up Torso to Left Head Slash");
 						}
 						else if(posIni == 6 && posFin == 2){
-
+								player.GetComponent<Player>().Attack(42);
 							//We call the player Attack 2
 								//Debug.Log("Right Up Torso to Left Up Torso Slash");
 						}
 						else if(posIni == 6 && posFin == 3){
-
+								player.GetComponent<Player>().Attack(43);
 							//We call the player Attack 3
 								//Debug.Log("Right Up Torso to Lower Torso Slash");
 						}
 						else if(posIni == 6 && posFin == 4){
-
+								player.GetComponent<Player>().Attack(44);
 							//We call the player Attack 4
 								//Debug.Log("Right Up Torso to Legs Slash");
 						}
 						else if(posIni == 6 && posFin == 5){
-
+								player.GetComponent<Player>().Attack(45);
 							//We call the player Attack 5
 								//Debug.Log("Right Up Torso to Right Head Slah");
 						}
 						else if(posIni == 6 && posFin == 6){
-
+								player.GetComponent<Player>().Attack(46);
 							//We call the player Attack 6
 								//Debug.Log("Right Up Torso Stab");
 						}
 						else if(posIni == 6 && posFin == 7){
-
+								player.GetComponent<Player>().Attack(47);
 							//We call the player Attack 7
 								//Debug.Log("Right Up Torso to Right Lower Torso Slash");
 						}else if(posIni == 6 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(48);
 							//We call the player Attack 8
 								//Debug.Log("Right Up Torso to Right Legs Slash");
 						}//////// 6 done
 						
 						else if(posIni == 7 && posFin == 1){
-
+								player.GetComponent<Player>().Attack(49);
 							//We call the player Attack 1
 								//Debug.Log("Right Lower Torso to Left Head Slash");
 						}
 						else if(posIni == 7 && posFin == 2){
-
+								player.GetComponent<Player>().Attack(50);
 							//We call the player Attack 2
 								//Debug.Log("Right Lower Torso to Left Up Torso Slash");
 						}
 						else if(posIni == 7 && posFin == 3){
-
+								player.GetComponent<Player>().Attack(51);
 							//We call the player Attack 3
 								//Debug.Log("Right Lower Torso to Lower Torso Slash");
 						}
 						else if(posIni == 7 && posFin == 4){
-
+								player.GetComponent<Player>().Attack(52);
 							//We call the player Attack 4
 								//Debug.Log("Right Lower Torso to Legs Slash");
 						}
 						else if(posIni == 7 && posFin == 5){
-
+								player.GetComponent<Player>().Attack(53);
 							//We call the player Attack 5
 								//Debug.Log("Right Lower Torso to Right Head Slah");
 						}
 						else if(posIni == 7 && posFin == 6){
-
+								player.GetComponent<Player>().Attack(54);
 							//We call the player Attack 6
 								//Debug.Log("Right Lower Torso to Right Up Torso Slash");
 						}
 						else if(posIni == 7 && posFin == 7){
-
+								player.GetComponent<Player>().Attack(55);
 							//We call the player Attack 7
 								//Debug.Log("Right Lower Torso Stab");
 						}else if(posIni == 7 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(56);
 							//We call the player Attack 8
 								//Debug.Log("Right Lower Torso to Right Legs Slash");
 						}//////// 7 done
 												
 						else if(posIni == 8 && posFin == 1){
-
+								player.GetComponent<Player>().Attack(57);
 							//We call the player Attack 1
 								//Debug.Log("Right Lower Legs to Left Head Long Slash");
 						}
 						else if(posIni == 8 && posFin == 2){
-
+								player.GetComponent<Player>().Attack(58);
 							//We call the player Attack 2
 								//Debug.Log("Right Lower Legs to Left Up Torso Slash");
 						}
 						else if(posIni == 8 && posFin == 3){
-
+								player.GetComponent<Player>().Attack(59);
 							//We call the player Attack 3
 								//Debug.Log("Right Lower Legs to Lower Torso Slash");
 						}
 						else if(posIni == 8 && posFin == 4){
-
+								player.GetComponent<Player>().Attack(60);
 							//We call the player Attack 4
 							//Debug.Log("Right Lower Legs to Left Lower Legs Slash");
 						}
 						else if(posIni == 8 && posFin == 5){
-
+								player.GetComponent<Player>().Attack(61);
 							//We call the player Attack 5
 								//Debug.Log("Right Lower Legs to Right Head Long Slah");
 						}
 						else if(posIni == 8 && posFin == 6){
-
+								player.GetComponent<Player>().Attack(62);
 							//We call the player Attack 6
 								//Debug.Log("Right Lower Legs to Right Up Torso Slash");
 						}
 						else if(posIni == 8 && posFin == 7){
-
+								player.GetComponent<Player>().Attack(63);
 							//We call the player Attack 7
 								//Debug.Log("Right Lower Legs to Right Lower Torso Slash");
 						}else if(posIni == 8 && posFin == 8){
-
+								player.GetComponent<Player>().Attack(64);
 							//We call the player Attack 8
 								//Debug.Log("Right Lower Legs Stab");
 						}
