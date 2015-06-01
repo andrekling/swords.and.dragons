@@ -419,485 +419,916 @@ public class Player : Character {
 			break;
 
 		case 17:
-			Debug.Log("Left Lower Torso to Left Head Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Left Lower Torso to Left Head Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 18:
-			Debug.Log("Left Lower Torso to Left Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Left Lower Torso to Left Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 19:
-			Debug.Log("Lower Torso Stab");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Lower Torso Stab");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 20:
-			Debug.Log("Left Lower Torso to Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Left Lower Torso to Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 21:
-			Debug.Log("Left Lower Torso to Right Head Slah");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Left Lower Torso to Right Head Slah");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 22:
-			Debug.Log("Left Lower Torso to Right Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Left Lower Torso to Right Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 23:
-			Debug.Log("Left Lower Torso to Right Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Left Lower Torso to Right Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 24:
-			Debug.Log("Left Lower Torso to Right Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Left Lower Torso to Right Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 25:
-			Debug.Log("Left Lower Legs to Left Head Long Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Left Lower Legs to Left Head Long Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 26:
-			Debug.Log("Left Lower Legs to Left Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Left Lower Legs to Left Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 27:
-			Debug.Log("Left Lower Legs to Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Left Lower Legs to Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 28:
-			Debug.Log("Left Lower Legs Stab");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Left Lower Legs Stab");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 29:
-			Debug.Log("Left Lower Legs to Right Head Long Slah");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Left Lower Legs to Right Head Long Slah");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 30:
-			Debug.Log("Left Lower Legs to Right Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Left Lower Legs to Right Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 31:
-			Debug.Log("Left Lower Legs to Right Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Left Lower Legs to Right Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 32:
-			Debug.Log("Left Lower Legs to Right Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Left Lower Legs to Right Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 33:
-			Debug.Log("Right Head Stab");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Head Stab");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 34:
-			Debug.Log("Right Head to Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Head to Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 35:
-			Debug.Log("Right Head to Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Head to Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 36:
-			Debug.Log("Right Head to Legs Long Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Head to Legs Long Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 37:
-			Debug.Log("Right Head to Right Head Slah");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Head to Right Head Slah");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 38:
-			Debug.Log("Right Head to Right Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Head to Right Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 39:
-			Debug.Log("Right Head to Right Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Head to Right Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 40:
-			Debug.Log("Right Head to Right Legs Long Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Head to Right Legs Long Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 41:
-			Debug.Log("Right Up Torso to Left Head Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Up Torso to Left Head Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 42:
-			Debug.Log("Right Up Torso to Left Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Up Torso to Left Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 43:
-			Debug.Log("Right Up Torso to Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Up Torso to Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 44:
-			Debug.Log("Right Up Torso to Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Up Torso to Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 45:
-			Debug.Log("Right Up Torso to Right Head Slah");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Up Torso to Right Head Slah");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 46:
-			Debug.Log("Right Up Torso Stab");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Up Torso Stab");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 47:
-			Debug.Log("Right Up Torso to Right Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Up Torso to Right Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 48:
-			Debug.Log("Right Up Torso to Right Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Up Torso to Right Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 49:
-			Debug.Log("Right Lower Torso to Left Head Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Lower Torso to Left Head Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 50:
-			Debug.Log("Right Lower Torso to Left Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Lower Torso to Left Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 51:
-			Debug.Log("Right Lower Torso to Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Lower Torso to Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 52:
-			Debug.Log("Right Lower Torso to Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Lower Torso to Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 53:
-			Debug.Log("Right Lower Torso to Right Head Slah");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Lower Torso to Right Head Slah");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 54:
-			Debug.Log("Right Lower Torso to Right Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Lower Torso to Right Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 55:
-			Debug.Log("Right Lower Torso Stab");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Lower Torso Stab");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 56:
-			Debug.Log("Right Lower Torso to Right Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Lower Torso to Right Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 57:
-			Debug.Log("Right Lower Legs to Left Head Long Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Lower Legs to Left Head Long Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 58:
-			Debug.Log("Right Lower Legs to Left Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Lower Legs to Left Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 59:
-			Debug.Log("Right Lower Legs to Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Lower Legs to Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 60:
-			Debug.Log("Right Lower Legs to Left Lower Legs Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Lower Legs to Left Lower Legs Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 61:
-			Debug.Log("Right Lower Legs to Right Head Long Slah");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 1;
+				Debug.Log("Right Lower Legs to Right Head Long Slah");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 62:
-			Debug.Log("Right Lower Legs to Right Up Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 2;
+				Debug.Log("Right Lower Legs to Right Up Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 63:
-			Debug.Log("Right Lower Legs to Right Lower Torso Slash");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 3;
+				Debug.Log("Right Lower Legs to Right Lower Torso Slash");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
 			break;
+
 		case 64:
-			Debug.Log("Right Lower Legs Stab");
-			damage = (int)(Damage() * QualityOfAttack());
-			if(damage == 0){damage = 1;}
-			Debug.Log("Damage is :" + damage);
-			
-			enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
-			enemy.GetComponent<Enemy>().Death();
-
-			break;
+			cost = 3;
+			if(energy > cost){
+				attackPoint = 4;
+				Debug.Log("Right Lower Legs Stab");
+				energy = energy - cost;
+				damage = (int)(Damage() * QualityOfAttack());
+				if(damage == 0){damage = 1;}
+				Debug.Log("Damage is :" + damage);
+				if(enemy.GetComponent<Enemy>().isDefending == false){
+					enemy.GetComponent<Enemy>().Defend();
+					if(attackPoint != enemy.GetComponent<Enemy>().defensePlace ){
+						enemy.GetComponent<Enemy>().life = enemy.GetComponent<Enemy>().life - damage;
+						enemy.GetComponent<Enemy>().Death();
+					}
+				}
+			}
+			break; 
 			}
 
 		EnergyRecover ();

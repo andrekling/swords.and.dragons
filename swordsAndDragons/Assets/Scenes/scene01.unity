@@ -468,6 +468,7 @@ MonoBehaviour:
   isDefending: 0
   defendingTime: 0
   defenseStoppedTime: 0
+  touchesZone1Counter: 0
   theText: TEXT
 --- !u!4 &1411637189
 Transform:
