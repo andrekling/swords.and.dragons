@@ -42,7 +42,7 @@ public class Logic : MonoBehaviour {
 	public bool isDefending = false;//for punishing if player attacks while defending
 	public float defendingTime = 0.0f;// a timer for when player starts defending, after a while the absortion power of defense will lower, this value could be based upong player lvl or item quality??
 	public float defenseStoppedTime = 0.0f;// so we check when player stop defending.
-	public int touchesZone1Counter;
+	public int defenseSpot;
 	public string theText = "TEXT";
 	private float startTimer = 0;
 
@@ -130,13 +130,17 @@ public class Logic : MonoBehaviour {
 						StartCoroutine (DefenseCoroutine(5.0f));
 
 						if(Input.GetTouch (i).position.y < screenDivY){
-							Debug.Log("Defending foot");
+							defenseSpot = 4;
+							//Debug.Log("Defending foot");
 						}else if (Input.GetTouch (i).position.y < 2 * screenDivY ){
-							Debug.Log("Defending Lower Chest");
+							defenseSpot = 3;
+							//Debug.Log("Defending Lower Chest");
 						}else if (Input.GetTouch (i).position.y < 3 *screenDivY){
-							Debug.Log("Defending Upper Chest");
+							defenseSpot = 2;
+							//Debug.Log("Defending Upper Chest");
 						}else{
-							Debug.Log("Defending Head");
+							defenseSpot = 1;
+							//Debug.Log("Defending Head");
 						}
 
 						break;
@@ -700,7 +704,6 @@ public class Logic : MonoBehaviour {
 				}
 			}
 		}
-		touchesZone1Counter = touches1Zone.Count;
 		if(touches1Zone.Count < 1){
 			isDefending = false;// unflag the defense
 			defenseStoppedTime = defendingTime; // we set the stopped time why i need i stopped time for defense im not sure yet, might  get rid of this later
