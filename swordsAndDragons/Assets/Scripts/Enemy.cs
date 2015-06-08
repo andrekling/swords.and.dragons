@@ -26,6 +26,8 @@ public class Enemy : Character {
 	Animator anim;
 	int attackHash = Animator.StringToHash("Attack");
 	int attackTypeHash = Animator.StringToHash("AttackType");
+	int defenseHash = Animator.StringToHash("Defense");
+	int defenseTypeHash = Animator.StringToHash("DefenseType");
 
 
 
@@ -123,15 +125,23 @@ public class Enemy : Character {
 			defensePlace = 5;
 			Debug.Log("no defense");
 		} else if (defenseSpot >= noDef && defenseSpot <= legs) {
+			anim.SetInteger(defenseTypeHash, 4);
+			anim.SetTrigger(defenseHash);
 			defensePlace = 4;
 			Debug.Log("legs attack");
 		} else if (defenseSpot >= legs && defenseSpot <= loBody) {
+			anim.SetInteger(defenseTypeHash, 3);
+			anim.SetTrigger(defenseHash);
 			defensePlace = 3;
 			Debug.Log("lower body attack");
 		} else if (defenseSpot >= loBody && defenseSpot <= upBody) {
+			anim.SetInteger(defenseTypeHash, 2);
+			anim.SetTrigger(defenseHash);
 			defensePlace = 2;
 			Debug.Log("upper body attack");
 		} else if (defenseSpot > upBody ) {
+			anim.SetInteger(defenseTypeHash, 1);
+			anim.SetTrigger(defenseHash);
 			defensePlace = 1;
 			Debug.Log("head attack");
 		}

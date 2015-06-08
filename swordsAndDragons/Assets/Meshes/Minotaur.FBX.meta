@@ -141,6 +141,10 @@ ModelImporter:
     7400004: AttackUpBody
     7400006: AttackLoBody
     7400008: AttacLegs
+    7400010: DefenseHead
+    7400012: DefenseUpBody
+    7400014: DefenseLoBody
+    7400016: DefenseLeg
     9500000: //RootNode
     13700000: NewLow
   materials:
@@ -806,6 +810,646 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 175
       lastFrame: 217
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MinoHub001
+        weight: 1
+      - path: MinoHub001/MinoFur1
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2/MinoFur3
+        weight: 1
+      - path: MinoHub001/MinoLLeg1
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle/MinoLLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoRLeg1
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle/MinoRLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12/MinoLArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22/MinoLArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32/MinoLArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42/MinoLArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12/MinoRArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22/MinoRArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32/MinoRArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42/MinoRArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone002
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoMouth
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1/MinoNeckFat2
+        weight: 1
+      - path: MinoLLegPlatform
+        weight: 1
+      - path: MinoRLegPlatform
+        weight: 1
+      - path: NewLow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: DefenseHead
+      takeName: Take 001
+      firstFrame: 217
+      lastFrame: 248
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MinoHub001
+        weight: 1
+      - path: MinoHub001/MinoFur1
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2/MinoFur3
+        weight: 1
+      - path: MinoHub001/MinoLLeg1
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle/MinoLLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoRLeg1
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle/MinoRLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12/MinoLArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22/MinoLArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32/MinoLArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42/MinoLArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12/MinoRArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22/MinoRArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32/MinoRArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42/MinoRArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone002
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoMouth
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1/MinoNeckFat2
+        weight: 1
+      - path: MinoLLegPlatform
+        weight: 1
+      - path: MinoRLegPlatform
+        weight: 1
+      - path: NewLow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: DefenseUpBody
+      takeName: Take 001
+      firstFrame: 248
+      lastFrame: 280
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MinoHub001
+        weight: 1
+      - path: MinoHub001/MinoFur1
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2/MinoFur3
+        weight: 1
+      - path: MinoHub001/MinoLLeg1
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle/MinoLLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoRLeg1
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle/MinoRLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12/MinoLArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22/MinoLArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32/MinoLArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42/MinoLArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12/MinoRArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22/MinoRArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32/MinoRArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42/MinoRArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone002
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoMouth
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1/MinoNeckFat2
+        weight: 1
+      - path: MinoLLegPlatform
+        weight: 1
+      - path: MinoRLegPlatform
+        weight: 1
+      - path: NewLow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: DefenseLoBody
+      takeName: Take 001
+      firstFrame: 280
+      lastFrame: 312
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MinoHub001
+        weight: 1
+      - path: MinoHub001/MinoFur1
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2
+        weight: 1
+      - path: MinoHub001/MinoFur1/MinoFur2/MinoFur3
+        weight: 1
+      - path: MinoHub001/MinoLLeg1
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoLLeg1/MinoLLeg2/MinoLLegAnkle/MinoLLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoRLeg1
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle
+        weight: 1
+      - path: MinoHub001/MinoRLeg1/MinoRLeg2/MinoRLegAnkle/MinoRLegDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit11/MinoLArmDigit12/MinoLArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit21/MinoLArmDigit22/MinoLArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit31/MinoLArmDigit32/MinoLArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoLArmCollarbone/MinoLArm1/MinoLArm21/MinoLArm22/MinoLArmPalm/MinoLArmDigit41/MinoLArmDigit42/MinoLArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit11/MinoRArmDigit12/MinoRArmDigit13
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit21/MinoRArmDigit22/MinoRArmDigit23
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit31/MinoRArmDigit32/MinoRArmDigit33
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoRArmCollarbone/MinoRArm1/MinoRArm21/MinoRArm22/MinoRArmPalm/MinoRArmDigit41/MinoRArmDigit42/MinoRArmDigit43
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone002
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoHub003Bone003
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoHub003/MinoMouth
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1
+        weight: 1
+      - path: MinoHub001/MinoSpine1/MinoSpine2/MinoSpine3/MinoChest/MinoSpine1 1/MinoSpine2
+          1/MinoSpine3 1/MinoNeckFat1/MinoNeckFat2
+        weight: 1
+      - path: MinoLLegPlatform
+        weight: 1
+      - path: MinoRLegPlatform
+        weight: 1
+      - path: NewLow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: DefenseLeg
+      takeName: Take 001
+      firstFrame: 312
+      lastFrame: 342
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
