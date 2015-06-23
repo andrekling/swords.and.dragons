@@ -192,6 +192,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomNum: 0
   blinking: 1
+  randMax: 21
+  blinkNum: 17
+  waitTimer: .300000012
 --- !u!1 &743193232
 GameObject:
   m_ObjectHideFlags: 0

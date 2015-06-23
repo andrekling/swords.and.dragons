@@ -7,8 +7,12 @@ public class blink : MonoBehaviour {
 	public bool blinking = true;
 	Animator anim;
 	int blinkHash = Animator.StringToHash("blink");
+	public int randMax = 20;
+	public int blinkNum = 18;
+	public float waitTimer = 0.3f;
 	// Use this for initialization
 	void Start () {
+		anim = GetComponentInChildren<Animator> ();
 		StartCoroutine (Blink ());
 	}
 	
@@ -19,11 +23,11 @@ public class blink : MonoBehaviour {
 
 	IEnumerator Blink()	{
 		while (blinking == true) {
-			randomNum = Random.Range (0, 21);
-			if(randomNum > 18){
+			randomNum = Random.Range (0, randMax);
+			if(randomNum >blinkNum){
 				anim.SetTrigger(blinkHash);
 			}
-			yield return new WaitForSeconds(0.3f); 
+			yield return new WaitForSeconds(waitTimer); 
 		}
 	}
 }
