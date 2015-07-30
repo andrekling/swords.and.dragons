@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: AndreShader
-  m_Shader: {fileID: 4800000, guid: b1ab985554c07bc4c9cc15526745eafe, type: 3}
+  m_Name: VertFragTest
+  m_Shader: {fileID: 4800000, guid: b2b69cfc623ec3e47beba159a2bafdfb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -88,7 +88,7 @@ Material:
         first:
           name: _RampTex
         second:
-          m_Texture: {fileID: 2800000, guid: 05410751de4ad954c858728ebd16439a, type: 3}
+          m_Texture: {fileID: 2800000, guid: 48bf96316e455dd44a87eb6387a0b952, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -154,7 +154,15 @@ Material:
       data:
         first:
           name: _OutlineThikness
-        second: 1
+        second: .0154999997
+      data:
+        first:
+          name: _Outline
+        second: .100000001
+      data:
+        first:
+          name: _Push
+        second: .542999983
     m_Colors:
       data:
         first:
@@ -171,4 +179,8 @@ Material:
       data:
         first:
           name: _OutlinerColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _OutlineColor
+        second: {r: .316176474, g: .197610289, b: .0790441185, a: 1}
