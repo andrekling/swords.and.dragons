@@ -15,16 +15,29 @@ public class UVFrameAnimation : MonoBehaviour
 	[SerializeField]
 	bool _isLoop;
 
+	[SerializeField]
+	bool _isAutoHidden;
+
+	public UVFrameAnimation _vush;
+
 	Renderer _meshRenderer;
 
 	float _startTime;
 
 	public int currentFrame;
 
+	Vector2 size = new Vector2(0, 0);
+	Vector2 offset = new Vector2(0, 0);
+
 	void Awake()
 	{
+		_vush = this;
 		_meshRenderer = GetComponent<Renderer>();
 		_startTime = Time.time;
+		_meshRenderer.material.SetTextureOffset ("_MainTex", offset);
+		_meshRenderer.material.SetTextureScale ("_MainTex", size);
+		_vush.enabled = false;
+
 	}
 
 	void OnEnable()
@@ -47,11 +60,20 @@ public class UVFrameAnimation : MonoBehaviour
 		float uvY = (float) (currentFrame / _tileX);
 		float uvx = (float) (currentFrame % _tileX);
 
-		Vector2 size = new Vector2(1f/tileXF, 1f/tileYF);
+		 size = new Vector2(1f/tileXF, 1f/tileYF);
 
-		Vector2 offset = new Vector2(uvx/(tileXF), (tileYF-1f-uvY)/tileYF);
+		 offset = new Vector2(uvx/(tileXF), (tileYF-1f-uvY)/tileYF);
 
 		_meshRenderer.material.SetTextureOffset ("_MainTex", offset);
 		_meshRenderer.material.SetTextureScale ("_MainTex", size);
+
+	
+	// in here we will set if its auto hidden, and if it is we will unable the render component when its done.
+		if (_isAutoHidden) {
+			if(currentFrame == numFrames){
+				currentFrame = 0;
+				_vush.enabled = false;
+			}
+		}
 	}
 }

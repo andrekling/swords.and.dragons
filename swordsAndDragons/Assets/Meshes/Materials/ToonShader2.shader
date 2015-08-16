@@ -1,9 +1,8 @@
-﻿Shader "Andre/ToonShader2" {
+﻿Shader "Andre/ToonShader With Outline" {
 	Properties {
-		_Color ("Color", Color) = (1,1,1,1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_NormalMap("Normal Map", 2D) = "white" {}
-		_2Tex ("Second Map (RGB)", 2D) = "white" {}
+		_2Tex ("Shadow Map (RGB)", 2D) = "white" {}
 		_RampTex ("Ramp (RGB)", 2D) = "white" {}
 		
 		_OutlineThikness ("Outliner Thikness", Range(-0.1,0.1)) = 0
@@ -14,15 +13,17 @@
 		LOD 200
 		Cull Front
 		Lighting Off
-		
+
+	//Outline Part	
+						
 	 CGPROGRAM
       #pragma surface surf Lambert vertex:vert
      
      
        struct Input {
-          float2 uv_MainTex;
+          fixed2 uv_MainTex;
       };
-      float _OutlineThikness;
+      fixed _OutlineThikness;
       void vert (inout appdata_full v) {
           v.vertex.xyz += v.normal * _OutlineThikness;
       }
@@ -32,7 +33,9 @@
           o.Albedo = _OutlinerColor;
       }
       ENDCG
-		
+	
+	//Main Surface Shader part
+	
 		Cull Back
 		Lighting On
 		
@@ -40,7 +43,7 @@
 		
 		// Physically based Standard lighting model, and enable shadows on all light types
 		#pragma surface surf BasicDiffuse
-		
+	//Defined my own struct so we can have a shadowMap value	
 		struct SurfaceOutputAndre
 {
     fixed3 Albedo;  // diffuse color
@@ -51,7 +54,7 @@
     fixed Gloss;    // specular intensity
     fixed Alpha;    // alpha for transparencies
 };
-		
+		//Declared the variables to be used
 		uniform sampler2D _NormalMap;
 		uniform sampler2D _2Tex;
 		uniform sampler2D _RampTex;
@@ -59,21 +62,21 @@
 		
 		
 		
-		
+		//Defined a custom Lighting Setup
 		inline float4 LightingBasicDiffuse (SurfaceOutputAndre s, fixed3 lightDir, fixed atten)
 		{
 		
-		float difLight = max(0, dot (s.Normal, lightDir));
-		float2 uv_ramp={difLight,difLight};
-		float4 ramp = tex2D (_RampTex, uv_ramp);
+		fixed difLight = max(0, dot (s.Normal, lightDir));
+		fixed2 uv_ramp={difLight,difLight};
+		fixed4 ramp = tex2D (_RampTex, uv_ramp);
 		
 		
 		
-		float4 col;
-		float3 BlendColor;
+		fixed4 col;
+		fixed3 BlendColor;
 		
-		fixed sm1 = lerp(1,s.ShadowMap.b,ramp.b);
-		fixed sm2 = lerp(1,s.ShadowMap.g,ramp.g);
+		fixed sm1 = lerp(1,s.ShadowMap.r,ramp.b);
+		fixed sm2 = lerp(1,s.ShadowMap.r,ramp.g);
 		fixed sm3 = lerp(1,s.ShadowMap.r,ramp.r);
 		fixed sm4 = lerp(0,s.ShadowMap.a,ramp.a);
 		fixed sm5 = sm1 * sm2 * sm3 - 0.5;
@@ -88,7 +91,7 @@
 		//col.rgb = s.Albedo * BlendColor;
 		//col.rgb = s.Albedo * sm5 + sm4;
 		//col.rgb = _LightColor0.rgb * saturate(difLight * ( 2 * sm5));
-		col.rgb = (difLight + 0.5) * sm5;
+		col.rgb = s.Albedo * _LightColor0.rgb * (difLight + 0.5) * sm5;
 		//col.rgb = ramp;
 		//col.rgb = sm5;
 		col.a = s.Alpha;
@@ -98,35 +101,28 @@
 		// Use shader model 3.0 target, to get nicer looking lighting
 		//#pragma target 3.0
 
+        //fixed difLight = max(0, dot (s.Normal, lightDir));
 		sampler2D _MainTex;
-
+		
 		struct Input {
-			float2 uv_MainTex;
+			fixed2 uv_MainTex;
 			
 		};
 		
 
-		fixed4 _Color;
+		
 
 		void surf (Input IN, inout SurfaceOutputAndre o) {
-		//in uv_ramp;
-		float3 normalMap = UnpackNormal(tex2D(_NormalMap,IN.uv_MainTex));
+		fixed3 normalMap = UnpackNormal(tex2D(_NormalMap,IN.uv_MainTex));
 		
 						
 		o.Normal = normalMap.rgb;
 		
-		float4 BlendColor;
-		fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;	
-		float4 RText = tex2D(_2Tex, IN.uv_MainTex);
-		//float4 GText = tex2D(_2Tex, IN.uv_MainTex);
-		//float4 BText = tex2D(_2Tex, IN.uv_MainTex);
 		
-		BlendColor = lerp(RText.r,RText.g,c.g);
-			
-			
-			//Trying to blend textures
-			//o.Albedo = BlendColor.rgb;
-			
+		fixed4 c = tex2D (_MainTex, IN.uv_MainTex);	
+		fixed4 RText = tex2D(_2Tex, IN.uv_MainTex);
+				
+						
 			
 			//Passing the rgb as the color
 			o.Albedo = c.rgb;
