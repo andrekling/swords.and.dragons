@@ -69,6 +69,11 @@ ModelImporter:
     100122: MinoSpine3
     100124: MinoSpine3 1
     100126: NewLow
+    100128: pelo
+    100130: HeadTarget
+    100132: LegsTarget
+    100134: LowerBodyTarget
+    100136: UpperBodyTarget
     400000: //RootNode
     400002: Mino
     400004: MinoChest
@@ -133,9 +138,15 @@ ModelImporter:
     400122: MinoSpine3
     400124: MinoSpine3 1
     400126: NewLow
+    400128: pelo
+    400130: HeadTarget
+    400132: LegsTarget
+    400134: LowerBodyTarget
+    400136: UpperBodyTarget
     2300000: //RootNode
     3300000: //RootNode
     4300000: NewLow
+    4300002: pelo
     7400000: Idle
     7400002: AttackHead
     7400004: AttackUpBody
@@ -155,6 +166,7 @@ ModelImporter:
     7400032: EndDefenseLeg
     9500000: //RootNode
     13700000: NewLow
+    13700002: pelo
   materials:
     importMaterials: 1
     materialName: 0
@@ -164,6 +176,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
@@ -356,7 +372,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .510834813
+      - time: .413160414
         functionName: vushCall
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -523,7 +539,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .420177013
+      - time: .399246782
         functionName: vushCall
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -690,7 +706,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .41961357
+      - time: .403334498
         functionName: vushCall
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -857,7 +873,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .416553825
+      - time: .397949159
         functionName: vushCall
         data: 
         objectReferenceParameter: {instanceID: 0}
